@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+.startArea{
+    width: 100%;
+    max-width: 324px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.startArea form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.startArea form label{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.startArea input{
+    display: block;
+    margin-top: 12px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(235, 235, 235);
+    outline: none;
+    text-align: center;
+}
+
+.area {
+    width: 100%;
+    max-width: 324px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 30px;
+    display: none;
+}
+.area .item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #333;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+
+.info {
+    width: 100%;
+    max-width: 324px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 12px;
+    border-radius: 10px;
+    display: none;
+}
+.info .item {
+    flex: 1;
+}
+.info .title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.info .body {
+    text-align: center;
+    color: #17a2b8;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.restart{
+    display: none;
+    background-color: #60b9c7;
+    color: #fff;
+    padding: 12px 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.start {
+    display: inline-block;
+    background-color: #60b9c7;
+    color: #fff;
+    padding: 12px 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.restart:hover , .start:hover {
+    background-color: #17a2b8;
+}
+
+footer{
+    font-size: 13px;
+    margin-top: 42px;
+}
